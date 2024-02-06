@@ -1,0 +1,113 @@
+body
+{   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('img/fondo1.jpeg');
+    color: white;
+    background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+ 	background-repeat: no-repeat;
+  	margin: 0;
+  	height: 100vh;
+	width:100%;
+    overflow: hidden;/*para que no salgan las barras desplazadoras*/
+}
+
+a{  display: flex;
+    flex-direction: column;
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(177, 177, 177);
+    cursor: pointer;
+    transition: color 1.2s;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /*Importante para que el contenedor ocupe el 100% y no otro tamaño*/
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+.topleft img:hover {
+    transform:scale(1.3);
+    transition: all 0.6s;
+}
+
+.topright {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+   
+.topright img:hover {
+    transform:scale(1.3);
+    transition: all 0.6s;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+.bottomleft img:hover {
+    transform:scale(1.3);
+    transition: all 0.6s;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+.bottomright img:hover {
+    transform:scale(1.3);
+    transition: all 0.6s;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+.center img {
+    margin-bottom: 10px;/*esta imagen por defecto tiene menos fondo transparente en la parte de debajo*/
+}
+.center img:hover {
+    transform:scale(1.3);
+    transition: all 0.6s;
+}
+  img { 
+    width: 150px;
+    height: auto;
+  }
